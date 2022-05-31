@@ -1,0 +1,50 @@
+# to create simple calculator
+a = int(input("Enter the first number: "))
+b = int(input("Enter the second number: "))
+print("1) Addition 2) Subtraction 3) Multiplication 4) Division ")
+con = 1
+while con == 1:
+ choice = int(input("Enter your choice: "))
+ if choice == 1:
+   print(a+b)
+ elif choice == 2:
+   print(a-b)
+ elif choice == 3:
+   print(a*b)
+ elif choice == 4:
+   print("Integer division is "+str(a//b))
+   print("Floating division is "+str(a/b))
+ else:
+   print("You entered wrong choice...")
+ con = int(input("Press 1 to continue..."))
+
+
+# Stack implementation in python
+stack = []
+con = 1
+while con == 1:
+  print("Choose any of the following operation")
+  print("1.push 2.pop 3.top")
+  choice = int(input())
+  if choice == 1:
+    val = int(input("Enter the value to insert into stack\n"))
+    stack.append(val)
+  elif choice == 2:
+    if len(stack) == 0:
+      print("The stack is aldready empty!!!")
+    else:
+      print(str(stack.pop())+" has been deleted")
+  else: 
+    if len(stack) > 0:
+      print("The top element in stack is: "+str(stack[len(stack)-1]))
+    else:
+      print("The stack is aldready empty!!!")
+  con = int(input("Press 1 to continue: "))
+
+print(stack)
+
+# Celcius to fahrenheit
+
+celcius = int(input("Enter the celcius value"))
+fahrenheit = celcius * 1.8 + 32
+print("Fahrenheit for given celcius is : "+str(fahrenheit))
