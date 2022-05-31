@@ -1,0 +1,33 @@
+# exp 4 String formating
+# count occurrence of each word in a string
+
+s = input("Enter a string: ")
+d = {}
+for word in s.split(' '):
+  if word in d:
+    d[word] += 1
+  else:
+    d[word] = 1
+for word in d:
+  print(word," occured ",d[word]," times...")
+  
+  # exp 4 b) replace char with '$'
+s = input("Enter a string... ")
+ch = s[0]
+s = s.replace(ch,'$')
+s = s.replace('$',ch,1)
+print(s)
+# exp 4 c) counting number of lines in a file
+
+with open(r"/content/drive/MyDrive/ost/file.txt", 'r') as fp:
+    for count, line in enumerate(fp):
+        pass
+print('Total Lines', count + 1)
+
+# exp 4 d) file copy content to another file
+
+with open("/content/drive/MyDrive/ost/file.txt") as f:
+    with open("output.txt", "a") as f1:
+        for line in f:
+            f1.write(line)
+print("Copied successfully!")
