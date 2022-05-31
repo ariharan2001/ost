@@ -1,0 +1,56 @@
+# exp 3 a) sorting
+n = int(input("Enter the number of element"))
+l = []
+print("Enter ",n," numbers");
+for i in range(n):
+  val = int(input())
+  l.append(val)
+for i in range(n):
+  for j in range(i+1,n):
+    if l[i] > l[j]:
+      l[i],l[j] = l[j],l[i]
+print(l)
+
+# exp 3 b) seperating each data types from list
+l = ["sam","raj","ari",1,2,3,12.1,13.23,56.3]
+
+ints = []
+floats = []
+strings = []
+
+for i in range(len(l)):
+  if type(l[i]) == type(1):
+    ints.append(l[i])
+  elif type(l[i]) == type(1.2):
+    floats.append(l[i])
+  else:
+    strings.append(l[i])
+
+print(ints)
+print(floats)
+print(strings)
+
+
+# exp 3 c) Operation on dictionary
+dicts = {"sam":2,"ari":1,"raj":3,"vimal":4,"bala":5}
+# getting value by key
+print(dicts.get("ari"))
+# adding a key-value pair
+dicts["sanjay"] = 6
+print(dicts)
+# deleting a key value pair
+dicts.pop("bala")
+print("After popping \"bala:5\" ")
+print(dicts)
+
+# exp 3 d) Tuples
+tup = (1,2,3,4,5,6)
+oddTup = []
+evenTup = []
+for item in tup:
+  if item%2:
+    oddTup.append(item)
+  else:
+    evenTup.append(item)
+print(oddTup)
+print(evenTup) 
