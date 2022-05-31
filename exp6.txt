@@ -1,0 +1,12 @@
+num = 20
+
+import gradio as gr
+
+def guess(number):
+  number = int(number)
+  if number == num:
+    return "You correctly guessed the number hidden :) " 
+  return "You are wrong! "
+  
+iface = gr.Interface(fn=guess, inputs="text", outputs="text")
+iface.launch()
