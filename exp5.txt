@@ -1,0 +1,14 @@
+# exp 5 a) to raise exception on age invalidation
+
+try:
+   age = int(input("Enter the age : "))
+   if age < 0:
+      raise ValueError("age cannnot be a negative value")
+   if age > 200:
+      raise ValueError("age cannot be higher than 200")
+except ValueError as ve:
+  print(ve)  
+  
+ 
+  
+  
