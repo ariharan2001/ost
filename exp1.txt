@@ -1,0 +1,35 @@
+# print function in python
+print("Hello, World!")
+# type function 
+x = 10
+print(type(x))
+# list in python
+a = [1,2,3,4,5]
+print(type(a))
+# tuples in python
+t = (1,2,3,4,5)
+print(type(t))
+# printing numbers in a range
+for i in range(1,10):
+  print(i,end=" ")
+# boolean values
+print()
+print(type(True))
+print(type(False))
+# "**" operator
+print(3**3)
+# if and else
+age = 19
+if age < 18:
+  print("You are not eligible to vote")
+else:
+  print("You are eligible to vote")
+# for loop 
+for item in a:
+  print(item,end=" ")
+print()
+# while loop
+i = 0
+while i < len(a):
+  print(a[i],end=" ")
+  i+=1
