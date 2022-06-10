@@ -1,0 +1,25 @@
+# exp 11 a)
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.arange(0,3*np.pi,0.2)
+y = np.sin(x)
+
+print("Plot the points using matplotlib:")
+plt.plot(x,y)
+
+plt.show()
+
+# exp 11 b)
+
+import statistics as st
+
+l1 = []
+n = int(input("Enter No of Elements:"))
+print("Enter Elements:")
+
+for i in range(n):
+  l1.append(int(input()))
+
+print("The mean is ",st.mean(l1))
