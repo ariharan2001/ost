@@ -1,0 +1,21 @@
+# exp 10
+
+import numpy as np
+
+a = np.array([1,2,3,4,5])
+b = np.array([1,2,3,4,5])
+
+c = np.add(a,b)
+print("The sum of Two Arrays = ",c)
+
+d = np.sum(a)
+print("The sum of Array elements = ",d)
+
+print("The Square Root of Array = ",np.sqrt(b))
+
+e = np.array([a,b,c,b,a])
+print(e)
+
+print("Sum of Each Column = \n",e.sum(axis=1))
+print("Sum of Each Row = \n",e.sum(axis=0))
+print("Transpose of Array = \n",e.transpose())
